@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://hshlib.one/overview/index.html/sitemap.xml

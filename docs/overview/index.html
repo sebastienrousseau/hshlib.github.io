@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta itemprop="datePublished" content="2023-10-28T17:12:17+00:00" id="date">
+    <meta itemprop="dateModified" content="2023-10-28T17:12:17+00:00" id="last-modified">
+    <title>Hash (HSH): Benefits of Quantum-Resistant Password Hashing</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta content="Sebastien Rousseau" name="author"><meta content="Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats with ease and confidence." name="description"><meta content="telephone=no" name="format-detection"><meta content="Shokunin 🦀 (version 0.0.19)" name="generator"><meta content="quantum-resistant password hashing, password security, cybersecurity, post-quantum cryptography, Hash (HSH), Argon2, bcrypt, scrypt, quantum computing, password attacks, data protection" name="keywords"><meta content="en-GB" name="language"><meta content="https://hshlib.one/overview/index.html" name="permalink"><meta content="general" name="rating"><meta content="no-referrer" name="referrer"><meta content="7 days" name="revisit-after"><meta content="index, follow" name="robots"><meta content="" name="theme-color"><meta content="Hash (HSH): Benefits of Quantum-Resistant Password Hashing" name="title"><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats with ease and confidence.">
+<meta name="og:image" content="https://kura.pro/hsh/images/logos/hsh.webp">
+<meta name="og:image:alt" content="Logo of Hash (HSH), a Quantum-Safe Cryptography (QSC) Hash Library">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="Hash (HSH): Benefits of Quantum-Resistant Password Hashing">
+<meta name="og:url" content="https://hshlib.one/overview/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta content="portrait" name="apple_mobile_web_app_orientations"><meta content="192x192" name="apple_touch_icon_sizes"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-inset"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="Hash (HSH): Benefits of Quantum-Resistant Password Hashing" name="apple-mobile-web-app-title"><meta content="yes" name="apple-touch-fullscreen">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    <meta content="" name="msapplication-navbutton-color">
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats with ease and confidence.">
+<meta name="twitter:image" content="https://kura.pro/hsh/images/logos/hsh.webp">
+<meta name="twitter:image:alt" content="Logo of Hash (HSH), a Quantum-Safe Cryptography (QSC) Hash Library">
+<meta name="twitter:image:height" content="100vh">
+<meta name="twitter:image:width" content="100vw">
+<meta name="twitter:site" content="https://hshlib.one">
+<meta name="twitter:title" content="Hash (HSH): Benefits of Quantum-Resistant Password Hashing">
+<meta name="twitter:url" content="https://hshlib.one">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://hshlib.one" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/daniele-franchi-Vl6YuVBLEys.webp">
+    <link rel="canonical" href="https://hshlib.one" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/Overview/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/Overview/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgb(17, 202, 240)}*{font-weight:300}a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}.text-shadow{text-shadow:1px 1px 2px black}body{background-color: black!important; }
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-black text-white text-start fs-6"
+    style="background: linear-gradient(315deg, hsla(190, 88%, 50%, 1) 0%, hsla(0, 0%, 0%, 1) 50%);"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+      style="background-color: transparent;"
+    >
+    <div class="container-xxl py-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top fade-in"
+          width="44"
+          height="44"
+          src="https://kura.pro/hsh/images/logos/hsh.webp"
+          alt="Logo of Hash (HSH), a Quantum-Safe Cryptography (QSC) Hash Library"
+          title="Logo of Hash (HSH), a Quantum-Safe Cryptography (QSC) Hash Library"
+          loading="lazy"
+        />
+      </a>
+      <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler bg-info border-0"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-dark ms-auto mb-2 bg-transparent">
+            <li class="nav-item">
+              <a
+                class="nav-link text-info"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/overview/index.html">Overview</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-info dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Resources</a>
+              <ul
+                class="dropdown-menu dropdown-menu-end border border-info bg-black"
+                aria-labelledby="resourcesDropdown"
+              >
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/getting-started/index.html">Getting Started</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/contribute/index.html">Contribute</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="https://github.com/sebastienrousseau/hsh" target="_blank">GitHub ⧉</a>
+                </li>
+                <li>
+                  <a class="bg-transparent dropdown-item text-info" href="/tags/index.html">Tags</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="button btn btn-info rounded-pill text-white"
+                aria-current="page"
+                href="/contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+    <header class="fade-in text-white text-center position-relative p-5 mt-50"
+    style="background: transparent url('https://kura.pro/stock/images/banners/daniele-franchi-Vl6YuVBLEys.webp') no-repeat left center / contain;"
+    >
+      <div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
+        <p class="display-2">Overview</p>
+        <p class="lead fs-3 text-info">Welcome to the Era of Quantum-Resistant Password Hashing.</p>
+      </div>
+    </header>
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between bg-transparent"><h1 id="h1-hash" tabindex="0" itemprop="headline" id="" tabindex="0" itemprop="headline" class="hash">Hash (HSH): Benefits of Quantum-Resistant Password Hashing</h1><p>Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats with ease and confidence.</p><p></p><p><img src="https://kura.pro/stock/images/banners/maximalfocus-76McKuOlI5U.webp" alt="A creative illustration on Quantum computing theme" title="A creative illustration on Quantum computing theme"  class="w-25 fade-in p-3 float-start"/></p>
+<p>In today’s digital world, passwords are more important than ever. They protect our access to everything from our email and social media accounts to our bank accounts and online shopping profiles. However, as technology advances, and with cybercrime becoming more prevalent, passwords are becoming less secure.</p>
+<p>Quantum computing is a rapidly developing field with the potential to revolutionize many industries. However, quantum computers also pose a significant threat to cryptography. Many widely used cryptographic algorithms, such as RSA and SHA-2, are vulnerable to attack by quantum computers.</p>
+<p>Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats. With HSH, you can be confident that your users’ passwords are safe and secure, even as technology advances and cybercrime becomes more prevalent.</p>
+<h2 id="h2-benefits" tabindex="0" itemprop="subheadline" class="benefits">Benefits of Hash (HSH)</h2>
+<p><img src="https://kura.pro/stock/images/banners/mcdobbie-hu-5RgShZblKAQ.webp" alt="A creative illustration on Quantum computing theme" title="Learn more about the benefits of Hash (HSH)"  class="w-25 fade-in p-3 float-end"/></p>
+<p>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances. HSH also offers a number of other benefits, including:</p>
+<ul>
+<li><strong>Quantum-resistant security</strong>: HSH uses quantum-resistant cryptographic algorithms like <a href="https://en.wikipedia.org/wiki/Argon2" title="Argon2">Argon2</a>, <a href="https://en.wikipedia.org/wiki/Bcrypt" title="Bcrypt">bcrypt</a>, and <a href="https://en.wikipedia.org/wiki/Scrypt" title="Scrypt">scrypt</a> to protect your passwords from brute-force attacks, rainbow table attacks, dictionary attacks, and other advanced threats.</li>
+<li><strong>Ease of use</strong>: HSH has a simple and intuitive API that makes it easy to integrate into any application. HSH handles all the complexity behind the scenes, so you can focus on building your products.</li>
+<li><strong>Versatility</strong>: HSH is a versatile library that can be used in any application that needs to securely manage user passwords and credentials. It is agnostic to specific use cases like web apps, mobile apps, servers, and embedded systems.</li>
+<li><strong>Performance</strong>: HSH is designed for performance. It leverages native Rust and algorithm optimisations to deliver fast hashing operations. HSH also avoids the overhead of wrappers and layers of abstraction.</li>
+</ul>
+<h3 id="h3-why" tabindex="0" itemprop="subheadline" class="why">Why Use Hash (HSH)?</h3>
+<p><img src="https://kura.pro/stock/images/banners/pawel-czerwinski-7LoWpCOAn6k.webp" alt="A creative illustration on Quantum computing theme" title="Learn more about the benefits of Hash (HSH)"  class="w-25 fade-in p-3 float-start"/></p>
+<p>The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography. It enables developers to use quantum-resistant algorithms in their applications without the need for a detailed understanding of the underlying cryptographic algorithms.</p>
+<p>The library is built on the Rust programming language, renowned for its speed and efficiency, and ideally suited for cryptography, and long-term reliability. Rust is also a memory-safe language, which means that it is less susceptible to memory-related vulnerabilities like buffer overflows and memory leaks.</p>
+<p>There are several reasons why you should use HSH in your applications:</p>
+<ul>
+<li><strong>Security</strong>: HSH offers the highest level of security for password storage. Its quantum-resistant algorithms and security best practises protect passwords from even the most advanced threats.</li>
+<li><strong>Ease of use</strong>: HSH is easy to use, even for developers with no prior experience with cryptography. Its simple API makes it easy to integrate into any application.</li>
+<li><strong>Versatility</strong>: HSH is a versatile library that can be used in any application that needs to securely manage user passwords and credentials.</li>
+<li><strong>Performance</strong>: HSH is designed for performance. It delivers fast hashing operations and scales well across threads and cores.</li>
+<li><strong>Environmental sustainability and green software development</strong>: HSH is a lightweight and energy-efficient password hashing library that can help to reduce the environmental impact of your applications and services.</li>
+</ul>
+<h3 id="h3-why" tabindex="0" itemprop="subheadline" class="why">Why is Quantum-Resistant Password Hashing Important?</h3>
+<p><img src="https://kura.pro/stock/images/banners/philipp-katzenberger-iIJrUoeRoCQ.webp" alt="A creative illustration on Quantum computing theme" title="Learn more about the benefits of Hash (HSH)"  class="w-25 fade-in p-3 float-end"/></p>
+<p>Quantum-resistant password hashing is important because it can help protect your users’ passwords from future attacks by quantum computers. Quantum computers are still in their early stages of development, but they have the potential to break widely used cryptographic algorithms, such as RSA and SHA-2. By using a quantum-resistant password hashing algorithm, you can help to ensure that your users’ passwords remain safe and secure, even in the face of future advances in quantum computing.</p>
+<h2 id="h2-how" tabindex="0" itemprop="subheadline" class="how">How to Get Started with Hash (HSH)</h2>
+<p><a href="/getting-started/index.html" title="Getting Started">Start using Hash (HSH) today to protect your users’ passwords from the future of computing!</a> It’s easy to install and use, and it’s free for personal and commercial use.</p>
+</div>
+    </main>
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer mt-auto py-3 bg-transparent">
+      <span class="px-2">© 2023 Hash (HSH). All rights reserved.</span>
+      <p class="mb-0">
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+    </footer>
+    <!-- # End Footer -->
+    <!-- # Start Scripts -->
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "author": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightHolder": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "copyrightYear": "© 2023 Hash (HSH). All rights reserved.",
+        "creator": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        },
+        "dateModified": "2023-10-28T17:12:17+00:00",
+        "datePublished": "2023-10-28T17:12:17+00:00",
+        "description": "Hash (HSH) is a quantum-resistant password hashing library that protects your passwords from even the most advanced threats with ease and confidence.",
+        "headline": "Welcome to the Era of Quantum-Resistant Password Hashing.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://kura.pro/hsh/images/logos/hsh.webp"
+        },
+        "inLanguage": "en-GB",
+        "mainEntityOfPage": "https://hshlib.one/overview/index.html",
+        "name": "Overview",
+        "publisher": {
+          "@type": "Person",
+          "@id": "Sebastien Rousseau"
+        }
+      }
+    </script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ETHW4X7HK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1ETHW4X7HK');
+    </script>
+    <!-- # End Scripts -->
+  </body>
+</html>
