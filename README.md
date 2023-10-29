@@ -39,7 +39,13 @@ cargo install ssg
 git clone https://github.com/sebastienrousseau/hshlib.github.io.git
 ```
 
-3. Generate the static site for sebastienrousseau.com
+3. Change into the repository directory:
+
+```shell
+cd hshlib.github.io
+```
+
+4. Generate the static site for hshlib.one:
 
 ```shell
 ssg -n=docs -c=_posts -t=_layouts -o=output -s=public
