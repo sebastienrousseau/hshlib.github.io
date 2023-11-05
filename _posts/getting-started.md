@@ -161,7 +161,7 @@ file:
 
 ```toml
 [dependencies]
-hsh = "0.0.6"
+hsh = "0.0.7"
 ```
 
 Add the following to your `main.rs` file:
