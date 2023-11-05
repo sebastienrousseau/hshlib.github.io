@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: https://hshlib.one/contact/rss.xml
 category: "Software, Static Site Generator, Rust"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.19)"
+generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: "Contact us today to learn more about how Hash (HSH) can help you protects your passwords."
 item_guid: https://hshlib.one/contact/rss.xml
 item_link: https://hshlib.one/contact/rss.xml
