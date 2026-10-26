@@ -1,0 +1,16 @@
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
+
+# Security Policy
+
+This repository holds the source of hshlib.one. Report a vulnerability
+in the website, or in the hsh library it describes, privately through
+[GitHub's advisory form](https://github.com/sebastienrousseau/hsh/security/advisories/new),
+the preferred channel in the library's
+[security policy](https://github.com/sebastienrousseau/hsh/security/policy),
+which also gives an email fallback.
+Machine-readable disclosure metadata lives at
+[`/.well-known/security.txt`](.well-known/security.txt) per
+[RFC 9116](https://www.rfc-editor.org/rfc/rfc9116).
+
+Please do **not** open a public GitHub issue for a suspected security
+vulnerability: report it privately first to coordinate disclosure.
