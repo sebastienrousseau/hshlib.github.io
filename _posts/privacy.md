@@ -1,132 +1,39 @@
 ---
-
-# Front Matter (YAML)
-
+name: "hsh"
+short_name: "hsh"
+title: "Privacy: what hshlib.one collects | hsh"
+description: "What happens to your data on hshlib.one: hosting on GitHub Pages, the contact form, and the theme preference stored in your browser."
+keywords: "hsh privacy, hshlib.one privacy policy"
 author: "Sebastien Rousseau"
-banner_alt: "A blurry image of a ball of light in the dark"
-banner_height: "100vh"
-banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/daniele-franchi-Vl6YuVBLEys.webp"
-cdn: "https://kura.pro"
-changefreq: "weekly"
-charset: "UTF-8"
-cname: ""
-copyright: "© 2023 Hash (HSH). All rights reserved."
-date: "Oct 29, 2023"
-description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
-format-detection: "telephone=no"
-form-id: ""
-hreflang: "en"
-icon: "https://kura.pro/hsh/images/favicon.ico"
-id: "https://hshlib.one/privacy/index.html"
-image_alt: "Logo of Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
-image_height: "100vh"
-image_width: "100vw"
-image: "https://kura.pro/hsh/images/logos/hsh.webp"
-keywords: "Privacy Statement, personal data protection, no cookies policy, no personal information collection, use of Google Analytics, use of Microsoft Clarity, user behaviour analytics, website traffic monitoring, user data rights, privacy policy updates."
+date: "2026-10-26"
+news_publication_date: "2026-10-26"
+layout: "page"
 language: "en-GB"
-layout: "link"
-locale: "en_GB"
-logo_alt: "Logo of Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
-logo_height: "44"
-logo_width: "44"
-logo: "https://kura.pro/hsh/images/logos/hsh.webp"
-menu: "active"
-measurementID: "G-VN18SSQLM6"
-name: "Privacy Policy"
-permalink: "https://hshlib.one/privacy/index.html"
-rating: "general"
-referrer: "no-referrer"
-revisit-after: "7 days"
-robots: "index, follow"
-short_name: "Privacy"
-subtitle: "Your privacy is important to us."
-tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
-theme_color: "rgb(17, 202, 240)"
-title: "Hash (HSH) Privacy: How We Use Your Data"
-url: "https://hshlib.one/privacy/index.html"
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
-atom_link: "https://hshlib.one/privacy/rss.xml"
-category: "Technology"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin 🦀 (version 0.0.20)"
-item_description: RSS feed for the site
-item_guid: "https://hshlib.one/privacy/rss.xml"
-item_link: "https://hshlib.one/privacy/rss.xml"
-item_pub_date: "2023-10-29T10:01:10+00:00"
-item_title: "Hash (HSH) Privacy: How We Use Your Data"
-last_build_date: "2023-10-29T10:01:10+00:00"
-managing_editor: "contact@hshlib.one"
-pub_date: "2023-10-29T10:01:10+00:00"
-ttl: "60"
-type: "website"
-webmaster: "contact@hshlib.one"
-
-# Apple - The Apple front matter (YAML).
-apple_mobile_web_app_orientations: "portrait"
-apple_touch_icon_sizes: "192x192"
-apple-mobile-web-app-capable: "yes"
-apple-mobile-web-app-status-bar-inset: "black"
-apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Hash (HSH) Privacy: How We Use Your Data"
-apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
-msapplication-navbutton-color: "rgb(17, 202, 240)"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
-twitter_card: "summary"
-twitter_creator: "wwdseb"
-twitter_description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
-twitter_image: "https://kura.pro/hsh/images/titles/title-hsh.webp"
-twitter_image_alt: "Logo of Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
-twitter_site: "wwdseb"
-twitter_title: "Hash (HSH) Privacy: How We Use Your Data"
-twitter_url: "https://hshlib.one/privacy/index.html"
-
-# Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://hshlib.one/privacy/index.html"
-author_twitter: "@wwdseb"
-author_location: "London, UK"
-thanks: "Thanks for reading!"
-site_last_updated: "2023-10-25"
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
-site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
-site_software: "Shokunin, Rust"
-
+schema: "page"
+changefreq: "monthly"
+eyebrow: "Privacy"
+headline: "What this site collects"
+lead: "Very little, and nothing that identifies you unless you send a message."
 ---
+## What does the site itself store?
 
-## Information Collection and Use
+Only your choice of light, dark or system theme, saved in your browser's
+local storage so the next page uses it. The site sets no cookies and runs no
+analytics.
 
-We do not directly collect any personal data from you while you navigate our website. We do not use cookies for logic or save any personal information from a user.
+## Who hosts it?
 
-## Use of Tracking Tools
+The site is served by GitHub Pages, which processes the technical data any
+web request carries, such as your IP address, under GitHub's own privacy
+policy.
 
-We use two third-party services to monitor and analyze web traffic: Google Analytics and Microsoft Clarity.
+## What happens to a message I send?
 
-### Google Analytics
+The contact form posts to Formspree, which delivers it by email. Your name,
+email address and message are used only to reply to you.
 
-Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: [Google Privacy & Terms ⧉](https://policies.google.com/privacy)
+## Does hsh send data anywhere?
 
-### Microsoft Clarity
-
-Microsoft Clarity is a user behavior analytics tool that helps us understand how users interact with our website. The data collected includes information such as mouse movements, clicks, and scrolls. For more information on the privacy practices of Microsoft, please visit the Microsoft Privacy Statement web page: [Microsoft Privacy Statement ⧉](https://privacy.microsoft.com/en-us/privacystatement)
-
-## Your Rights
-
-Depending on where you reside, you may have certain rights with respect to your personal data, such as the right to request access, correction, or deletion of your data, or to object to our use of your data.
-
-## Changes to This Privacy Policy
-
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
-
-We advise you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
-
-## Contact Us
-
-If you have any questions about this Privacy Policy, please
-[contact us](/contact/index.html).
+No. hsh is a library that runs inside your program and makes no network
+calls in 0.0.10: the cloud pepper providers are stubs, and the salts come
+from the operating system's random-number generator.
