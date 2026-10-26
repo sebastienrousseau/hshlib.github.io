@@ -28,7 +28,7 @@ with no warranty.
 The source of hshlib.com is available under Apache-2.0 or MIT, at your
 option, in the
 [hshlib.github.io repository](https://github.com/sebastienrousseau/hshlib.github.io).
-Its theme, Prism, is MIT-licensed.
+Its theme, cipher, is MIT-licensed.
 
 ## Anything else?
 
