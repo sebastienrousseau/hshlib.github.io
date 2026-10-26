@@ -5,7 +5,20 @@
 All notable changes to the hsh website, hshlib.com (formerly hshlib.one),
 are documented here.
 
-## [0.0.3] - Unreleased
+## [0.0.4] - Unreleased
+
+### Changed
+
+- Re-themed the site with the cipher theme from the ssg-themes suite,
+  replacing Prism. The accent colour tokens use the teal taken from the
+  hsh logo; every other colour is cipher's. Content, URLs, structured data
+  and the build checks are unchanged; the contrast gate now checks
+  cipher's tokens, including the aliases its components use.
+- Only the navigation, theme toggle, search and FAQ parts of cipher's
+  `main.js` are kept; its password generator and the word list it carries
+  have no use on this site.
+
+## [0.0.3] - 2026-10-26 (merged, not tagged)
 
 ### Changed
 
