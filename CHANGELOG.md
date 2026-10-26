@@ -2,9 +2,18 @@
 
 # Changelog
 
-All notable changes to hshlib.one are documented here.
+All notable changes to the hsh website, hshlib.com (formerly hshlib.one),
+are documented here.
 
-## [0.0.2] - Unreleased
+## [0.0.3] - Unreleased
+
+### Changed
+
+- Serve the site at https://hshlib.com/, the homepage in hsh's own
+  Cargo.toml, instead of hshlib.one: base URL, canonical and Open Graph
+  URLs, the CNAME the build writes, robots.txt, security.txt and the README.
+
+## [0.0.2] - 2026-10-26 (merged, not tagged)
 
 ### Changed
 

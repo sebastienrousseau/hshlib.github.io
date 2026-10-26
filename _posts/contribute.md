@@ -49,6 +49,6 @@ The full guide is
 
 ## Improving this website
 
-The source of hshlib.one is in the
+The source of hshlib.com is in the
 [hshlib.github.io repository](https://github.com/sebastienrousseau/hshlib.github.io).
 Report a mistake on the site there, or through the [contact page](/contact/).

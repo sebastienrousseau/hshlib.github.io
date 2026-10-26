@@ -2,7 +2,7 @@
 name: "hsh"
 short_name: "hsh"
 title: "Terms of use | hsh"
-description: "The terms for using hshlib.one and the licences that apply to hsh and to this website's source."
+description: "The terms for using hshlib.com and the licences that apply to hsh and to this website's source."
 keywords: "hsh terms, hsh licence"
 author: "Sebastien Rousseau"
 date: "2026-10-26"
@@ -25,7 +25,7 @@ with no warranty.
 
 ## Which licence applies to this website?
 
-The source of hshlib.one is available under Apache-2.0 or MIT, at your
+The source of hshlib.com is available under Apache-2.0 or MIT, at your
 option, in the
 [hshlib.github.io repository](https://github.com/sebastienrousseau/hshlib.github.io).
 Its theme, Prism, is MIT-licensed.
