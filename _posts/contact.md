@@ -2,7 +2,7 @@
 name: "hsh"
 short_name: "hsh"
 title: "Contact the hsh project | hsh"
-description: "Send a question or feedback about hsh or hshlib.one. Bugs and feature requests are best filed as GitHub issues, and security reports go privately."
+description: "Send a question or feedback about hsh or hshlib.com. Bugs and feature requests are best filed as GitHub issues, and security reports go privately."
 keywords: "contact hsh, hsh support, hsh feedback"
 author: "Sebastien Rousseau"
 date: "2026-10-26"

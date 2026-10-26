@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hshlib.one/sitemap.xml
+Sitemap: https://hshlib.com/sitemap.xml

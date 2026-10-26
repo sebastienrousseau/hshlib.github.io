@@ -2,5 +2,5 @@
 Contact: https://github.com/sebastienrousseau/hsh/security/advisories/new
 Expires: 2027-12-31T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://hshlib.one/.well-known/security.txt
+Canonical: https://hshlib.com/.well-known/security.txt
 Policy: https://github.com/sebastienrousseau/hsh/security/policy

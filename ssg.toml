@@ -1,10 +1,10 @@
-# Site configuration for hshlib.one, built with `make build`.
+# Site configuration for hshlib.com, built with `make build`.
 # The paths are relative to the repository root.
 
 site_name = "hsh"
 site_title = "hsh: password hashing for Rust"
 site_description = "hsh is a password hashing library for Rust: Argon2id, bcrypt, scrypt and PBKDF2 behind one policy, PHC strings, rehash on login when the policy changes, a versioned pepper and a FIPS 140-3 mode."
-base_url = "https://hshlib.one"
+base_url = "https://hshlib.com"
 language = "en-GB"
 
 content_dir = "_posts"

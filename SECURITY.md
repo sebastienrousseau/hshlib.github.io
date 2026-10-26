@@ -2,7 +2,7 @@
 
 # Security Policy
 
-This repository holds the source of hshlib.one. Report a vulnerability
+This repository holds the source of hshlib.com. Report a vulnerability
 in the website, or in the hsh library it describes, privately through
 [GitHub's advisory form](https://github.com/sebastienrousseau/hsh/security/advisories/new),
 the preferred channel in the library's

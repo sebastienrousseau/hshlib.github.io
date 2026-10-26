@@ -1,4 +1,4 @@
-# Typed front-matter contract for hshlib.one.
+# Typed front-matter contract for hshlib.com.
 #
 # ssg validates every page carrying `schema = "page"` against this at
 # compile time, so a page missing one of the fields its layout prints fails

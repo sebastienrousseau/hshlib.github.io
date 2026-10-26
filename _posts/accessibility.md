@@ -2,7 +2,7 @@
 name: "hsh"
 short_name: "hsh"
 title: "Accessibility statement | hsh"
-description: "How hshlib.one is built to be accessible, how it is checked on every build, and how to report a barrier."
+description: "How hshlib.com is built to be accessible, how it is checked on every build, and how to report a barrier."
 keywords: "hsh accessibility, accessibility statement"
 author: "Sebastien Rousseau"
 date: "2026-10-26"
@@ -13,7 +13,7 @@ schema: "page"
 changefreq: "monthly"
 eyebrow: "Accessibility"
 headline: "Accessibility statement"
-lead: "hshlib.one aims to be usable by everyone, with any input device and any assistive technology."
+lead: "hshlib.com aims to be usable by everyone, with any input device and any assistive technology."
 ---
 ## How is the site built for accessibility?
 

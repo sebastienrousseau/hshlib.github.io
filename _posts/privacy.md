@@ -1,9 +1,9 @@
 ---
 name: "hsh"
 short_name: "hsh"
-title: "Privacy: what hshlib.one collects | hsh"
-description: "What happens to your data on hshlib.one: hosting on GitHub Pages, the contact form, and the theme preference stored in your browser."
-keywords: "hsh privacy, hshlib.one privacy policy"
+title: "Privacy: what hshlib.com collects | hsh"
+description: "What happens to your data on hshlib.com: hosting on GitHub Pages, the contact form, and the theme preference stored in your browser."
+keywords: "hsh privacy, hshlib.com privacy policy"
 author: "Sebastien Rousseau"
 date: "2026-10-26"
 news_publication_date: "2026-10-26"
